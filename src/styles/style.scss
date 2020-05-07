@@ -1,0 +1,12 @@
+@import "./nav.scss";
+@import "./main.scss";
+@import "./title.scss";
+@import "./overview.scss";
+@import "./projects.scss";
+@import "./blog.scss";
+@import "./footer.scss";
+
+.App {
+  display: flex;
+  flex-direction: row;
+}

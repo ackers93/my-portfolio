@@ -1,8 +1,9 @@
 import React from "react";
-
+import Blog from "./blog";
+import Projects from "./projects";
 function Overview() {
   return (
-    <div id="overview">
+    <div className="overview">
       <div className="about-me">
         <h2>About Me</h2>
         <p>
@@ -12,6 +13,8 @@ function Overview() {
           tempora neque.
         </p>
       </div>
+      <Projects />
+      <Blog />
     </div>
   );
 }

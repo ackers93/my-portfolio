@@ -1,0 +1,22 @@
+.blog {
+  border-top: 1px solid gray;
+
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+
+    .post {
+      width: 40%;
+      background-color: white;
+      margin: 20px;
+      filter: drop-shadow(-20px 10px 20px darkgrey);
+      border-radius: 6px;
+      padding: 2%;
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
