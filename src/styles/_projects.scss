@@ -13,9 +13,9 @@
     justify-content: center;
     justify-content: space-around;
     .project {
+      background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
       justify-content: space-around;
       border-radius: 10px;
-      background-color: white;
       filter: drop-shadow(-20px 10px 20px darkgrey);
       width: 40%;
       padding: 10px;
