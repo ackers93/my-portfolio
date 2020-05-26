@@ -42,6 +42,7 @@ function Projects(props) {
         </div>
         <div className="project">
           <h4 className="project-title">Capture - Expat Portfolio</h4>
+          https://expatjournalapp.netlify.com/l…
           <h6 className="description">
             Photo Sharing site for travelers to display their favorite shots and
             memories.

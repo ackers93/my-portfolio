@@ -1,16 +1,32 @@
-.nav {
+.nav-div {
   background-color: #878e99;
   width: 15%;
-  height: 100;
   position: fixed;
   nav {
-    padding: 4rem 1rem 4rem 1rem;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     a {
       text-decoration: none;
+
+      .nav-button {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+
+        &:hover {
+          filter: drop-shadow(-20px 10px 10px darkgrey);
+        }
+
+        h3 {
+          color: black;
+          margin-left: 1.5rem;
+        }
+      }
     }
   }
 }

@@ -1,12 +1,10 @@
-.nav {
+.nav-div {
   background-color: #878e99;
   width: 15%;
-  height: 100;
   position: fixed;
 }
 
-.nav nav {
-  padding: 4rem 1rem 4rem 1rem;
+.nav-div nav {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,14 +15,42 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.nav nav a {
+.nav-div nav a {
   text-decoration: none;
 }
 
+.nav-div nav a .nav-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.nav-div nav a .nav-button:hover {
+  -webkit-filter: drop-shadow(-20px 10px 10px darkgrey);
+          filter: drop-shadow(-20px 10px 10px darkgrey);
+}
+
+.nav-div nav a .nav-button h3 {
+  color: black;
+  margin-left: 1.5rem;
+}
+
 .main-content {
-  width: 100%;
+  margin-left: 15%;
 }
 
 .title {
@@ -127,6 +153,36 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.skills-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 10rem;
+}
+
+.skills-div .skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-div .skill-list i {
+  font-size: 2.5rem;
+  padding: 6px;
 }
 
 .App {
