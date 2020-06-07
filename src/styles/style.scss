@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 @import "./nav.scss";
 @import "./main.scss";
 @import "./title.scss";
@@ -5,7 +7,7 @@
 @import "./projects.scss";
 @import "./blog.scss";
 @import "./footer.scss";
-@import "./skills";
+@import "./skills.scss";
 
 .App {
   display: flex;

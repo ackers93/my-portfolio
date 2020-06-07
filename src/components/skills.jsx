@@ -3,7 +3,7 @@ import React from "react";
 function Skills() {
   return (
     <div className="skills-div">
-      <h3>Skills</h3>
+      <h3 className="skills-header">Skills</h3>
       <div className="skill-list">
         <i class="devicon-git-plain"></i>
 

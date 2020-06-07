@@ -1,30 +1,46 @@
 .nav-div {
-  background-color: #878e99;
   width: 15%;
   position: fixed;
+  border-right: 6px solid #fcba03;
   nav {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    padding-top: 30px;
+
+    h3 {
+      font-size: 3rem;
+      font-family: "Kaushan Script", cursive;
+    }
+
+    .divider {
+      display: flex;
+      border-top: 3px solid #030027;
+      background-color: #030027;
+      border-radius: 5px;
+      height: 1px;
+      width: 50%;
+    }
     a {
+      color: #030027;
       text-decoration: none;
 
       .nav-button {
         display: flex;
         align-items: center;
         flex-direction: row;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        transition: transform 0.2s;
 
         &:hover {
-          filter: drop-shadow(-20px 10px 10px darkgrey);
+          transform: scale(1.5);
         }
 
         h3 {
           color: black;
           margin-left: 1.5rem;
+          font-size: 1.3rem;
         }
       }
     }

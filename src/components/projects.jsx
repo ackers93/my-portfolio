@@ -1,5 +1,7 @@
 import React from "react";
 
+import ProjectData from "../data/projects.json";
+
 function Projects(props) {
   return (
     <div className="projects">

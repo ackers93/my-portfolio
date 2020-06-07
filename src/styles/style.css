@@ -1,7 +1,7 @@
 .nav-div {
-  background-color: #878e99;
   width: 15%;
   position: fixed;
+  border-right: 6px solid #fcba03;
 }
 
 .nav-div nav {
@@ -18,9 +18,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 30px;
+}
+
+.nav-div nav h3 {
+  font-size: 3rem;
+  font-family: "Kaushan Script", cursive;
+}
+
+.nav-div nav .divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 3px solid #030027;
+  background-color: #030027;
+  border-radius: 5px;
+  height: 1px;
+  width: 50%;
 }
 
 .nav-div nav a {
+  color: #030027;
   text-decoration: none;
 }
 
@@ -35,18 +53,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .nav-div nav a .nav-button:hover {
-  -webkit-filter: drop-shadow(-20px 10px 10px darkgrey);
-          filter: drop-shadow(-20px 10px 10px darkgrey);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .nav-div nav a .nav-button h3 {
   color: black;
   margin-left: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .main-content {
@@ -54,8 +75,7 @@
 }
 
 .title {
-  color: #0d1b2a;
-  background-color: #9db5b2;
+  color: #030027;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,6 +86,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.title h1 {
+  font-size: 4rem;
+  font-family: "Inter", sans-serif;
 }
 
 .overview {
@@ -107,19 +132,19 @@
 }
 
 .projects .project-list .project {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#e6e9f0), to(#eef1f5));
-  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  border: 4px solid #030027;
   border-radius: 10px;
-  -webkit-filter: drop-shadow(-20px 10px 20px darkgrey);
-          filter: drop-shadow(-20px 10px 20px darkgrey);
-  width: 40%;
+  width: 30%;
   padding: 10px;
 }
 
 .blog {
-  border-top: 1px solid gray;
+  border-top: 2px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .blog .posts {
@@ -128,16 +153,18 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .blog .posts .post {
-  width: 40%;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#e6e9f0), to(#eef1f5));
-  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border: 4px solid #030027;
+  border-radius: 10px;
+  width: 15%;
   margin: 20px;
-  -webkit-filter: drop-shadow(-20px 10px 20px darkgrey);
-          filter: drop-shadow(-20px 10px 20px darkgrey);
-  border-radius: 6px;
   padding: 2%;
 }
 
@@ -147,12 +174,25 @@
 }
 
 .footer {
+  margin-top: 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footer .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .skills-div {
@@ -167,6 +207,16 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 10rem;
+  background-color: #d3d6f2;
+  border-radius: 25px;
+  border: 3px solid #fcba03;
+  margin: 40px 0px;
+  padding: 10px;
+}
+
+.skills-div .skills-header {
+  font-size: 1.3rem;
+  font-family: "Inter", sans-serif;
 }
 
 .skills-div .skill-list {
@@ -183,6 +233,105 @@
 .skills-div .skill-list i {
   font-size: 2.5rem;
   padding: 6px;
+}
+
+.skills-div .skill-list i:hover {
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-1deg);
+            transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(1deg);
+            transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(1deg);
+            transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-1deg);
+            transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(0deg);
+            transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-1deg);
+            transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(1deg);
+            transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-1deg);
+            transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 .App {

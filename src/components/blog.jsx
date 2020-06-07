@@ -29,7 +29,7 @@ function Blog() {
   return (
     <div className="blog">
       <div className="about-blog">
-        <h2>Blog</h2>
+        <h1>Blog</h1>
 
         <p>
           I predominantly blog about my experiences with learning the Rails
