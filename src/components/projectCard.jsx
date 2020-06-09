@@ -11,11 +11,7 @@ const ProjectCard = ({ data }) => {
     setIsFlipped(!isFlipped);
   };
   return (
-    <ReactCardFlip
-      isFlipped={isFlipped}
-      flipDirection="vertical"
-      style={{ width: "0%" }}
-    >
+    <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
       <div className="card-front">
         <h2>{data.name}</h2>
         <img src={data.image}></img>
