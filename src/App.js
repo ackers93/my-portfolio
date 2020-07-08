@@ -4,6 +4,7 @@ import Nav from "./components/nav";
 import Title from "./components/title";
 import Overview from "./components/overview";
 import Footer from "./components/footer";
+import Resume from "./components/resume";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="main-content">
         <Title />
         <Overview />
+        <Resume />
         <Footer />
       </div>
     </div>
