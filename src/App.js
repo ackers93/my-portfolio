@@ -6,7 +6,7 @@ import Title from "./components/title";
 import Footer from "./components/footer";
 import Blog from "./components/blog";
 import Projects from "./components/projects";
-import Resume from "./components/resume";
+// import Resume from "./components/resume";
 import AboutMe from "./components/aboutMe";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <AboutMe />
         <Projects />
         <Blog />
-        <Resume />
+        {/* <Resume /> */}
         <Footer />
       </div>
     </div>
