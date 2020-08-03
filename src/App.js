@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/style.css";
 import Nav from "./components/nav";
+import MobileNav from "./components/mobileNav";
 import Title from "./components/title";
 // import Overview from "./components/overview";
 import Footer from "./components/footer";
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Nav />
       <div className="main-content">
+        <MobileNav />
         <Title />
         <AboutMe />
         <Projects />

@@ -1,0 +1,48 @@
+.mobile-nav {
+  @media (min-width: 1050px) {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+
+    h3 {
+      font-size: 3rem;
+      font-family: "Kaushan Script", cursive;
+    }
+
+    .divider {
+      display: flex;
+      border-top: 3px solid #030027;
+      background-color: #030027;
+      border-radius: 5px;
+      height: 1px;
+      width: 50%;
+    }
+    a {
+      color: #030027;
+      text-decoration: none;
+
+      .nav-button {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        transition: transform 0.2s;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+
+        h3 {
+          color: black;
+          margin-left: 1.5rem;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
