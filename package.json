@@ -12,7 +12,8 @@
     "react-card-flip": "^1.0.10",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "sass": "^1.26.3"
+    "sass": "^1.26.3",
+    "yarn": "^1.22.4"
   },
   "scripts": {
     "start": "react-scripts start",
