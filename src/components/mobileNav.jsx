@@ -2,19 +2,46 @@ import React, { useState } from "react";
 import Skills from "./skills";
 
 function MobileNav() {
-  const [open, setOpen] = useState(open);
+  const [open, setOpen] = useState(true);
 
   let menu;
   if (open) {
     menu = (
       <div className="mobile-nav">
-        <div>hello</div>
+        <button
+          style={{
+            color: "#030027",
+            fontSize: "2.5rem",
+            border: "none",
+            backgroundColor: "white",
+            margin: "1rem",
+          }}
+          onClick={() => {
+            setOpen(false);
+          }}
+        >
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
     );
   } else {
     menu = (
       <div className="mobile-nav">
         <nav>
+          <button
+            style={{
+              color: "#030027",
+              fontSize: "2rem",
+              border: "none",
+              backgroundColor: "white",
+              margin: "1rem",
+            }}
+            onClick={() => {
+              setOpen(true);
+            }}
+          >
+            <i class="fas fa-bars"></i>
+          </button>
           <a href=".about">
             <div className="nav-button">
               <i

@@ -3,6 +3,14 @@
     display: none;
   }
 
+  button {
+    display: flex;
+    justify-content: center;
+    @media (min-width: 1050px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
   nav {
     display: flex;
     flex-direction: column;
