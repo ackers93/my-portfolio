@@ -18,8 +18,7 @@ function AboutMe() {
       </p>
       <p>
         Aside from tech, my passions include hiking, traveling, reading
-        non-fiction and cooking. If you'd like to know more I love making
-        connections here so get in touch!
+        non-fiction and cooking.
       </p>
     </div>
   );

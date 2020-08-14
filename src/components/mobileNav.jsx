@@ -31,7 +31,7 @@ function MobileNav() {
           <button
             style={{
               color: "#030027",
-              fontSize: "2rem",
+              fontSize: "2.5rem",
               border: "none",
               backgroundColor: "white",
               margin: "1rem",
@@ -90,6 +90,20 @@ function MobileNav() {
               ></i>
               <h3>Resume</h3>
             </div>
+            <button
+              style={{
+                color: "#030027",
+                fontSize: "2.5rem",
+                border: "none",
+                backgroundColor: "white",
+                margin: "1rem",
+              }}
+              onClick={() => {
+                setOpen(false);
+              }}
+            >
+              <i class="fas fa-caret-up"></i>
+            </button>
           </a>
         </nav>
       </div>

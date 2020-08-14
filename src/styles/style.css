@@ -1,5 +1,5 @@
 .nav-div {
-  width: 15%;
+  width: 17%;
   height: 100%;
   position: fixed;
   border-right: 6px solid #fcba03;
@@ -32,6 +32,73 @@
       -ms-flex-align: center;
           align-items: center;
   padding-top: 30px;
+}
+
+.nav-div nav i:hover {
+  -webkit-animation: wobble 0.5s;
+          animation: wobble 0.5s;
+}
+
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  15% {
+    -webkit-transform: translateX(-25%) rotate(-5deg);
+            transform: translateX(-25%) rotate(-5deg);
+  }
+  30% {
+    -webkit-transform: translateX(20%) rotate(3deg);
+            transform: translateX(20%) rotate(3deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15%) rotate(-3deg);
+            transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    -webkit-transform: translateX(10%) rotate(2deg);
+            transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    -webkit-transform: translateX(-5%) rotate(-1deg);
+            transform: translateX(-5%) rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes wobble {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  15% {
+    -webkit-transform: translateX(-25%) rotate(-5deg);
+            transform: translateX(-25%) rotate(-5deg);
+  }
+  30% {
+    -webkit-transform: translateX(20%) rotate(3deg);
+            transform: translateX(20%) rotate(3deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15%) rotate(-3deg);
+            transform: translateX(-15%) rotate(-3deg);
+  }
+  60% {
+    -webkit-transform: translateX(10%) rotate(2deg);
+            transform: translateX(10%) rotate(2deg);
+  }
+  75% {
+    -webkit-transform: translateX(-5%) rotate(-1deg);
+            transform: translateX(-5%) rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
 }
 
 .nav-div nav h3 {
@@ -81,6 +148,10 @@
   color: black;
   margin-left: 1.5rem;
   font-size: 1.3rem;
+}
+
+.mobile-nav {
+  border-bottom: 1px dashed #030027;
 }
 
 @media (min-width: 1050px) {
@@ -176,13 +247,13 @@
 
 .main-content {
   width: 75%;
-  margin-left: 17%;
+  margin-left: 20%;
 }
 
 @media (max-width: 1050px) {
   .main-content {
-    width: 100%;
-    margin-left: 0%;
+    width: 80%;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

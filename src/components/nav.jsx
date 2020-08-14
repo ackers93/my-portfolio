@@ -5,7 +5,10 @@ function Nav() {
   return (
     <div className="nav-div">
       <nav>
-        <h3>AA</h3>
+        <i
+          class="fas fa-glasses"
+          style={{ color: "#030027", fontSize: "3rem" }}
+        ></i>
         <a href=".about">
           <div className="nav-button">
             <i
