@@ -10,11 +10,14 @@ const ProjectCard = ({ data }) => {
     event.preventDefault();
     setIsFlipped(!isFlipped);
   };
+  const pathToAssets = require.context("../images/");
+
+  console.log(data.image);
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
       <div className="card-front">
         <h2>{data.name}</h2>
-        <img src={data.image}></img>
+        <img src={require(`../images/${data.image}`)}></img>
         <p>{data.description}</p>
         <p className="more-info" onClick={handleFlip}>
           Click for more information

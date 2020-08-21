@@ -2,7 +2,7 @@
   {
     "name": "Kansha",
     "description": "A Workplace Recognition app for the purpose of showing appreciation within an organization and their teams",
-    "image": "https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80",
+    "image": "kanshaimage.png",
     "details": [
       "Worked with a nine person team to produce Kansha over a two month period.",
       "Created an Admin Dashboard to closely follow user engagement and discover which employees are the most appreciated.",
@@ -27,7 +27,7 @@
   {
     "name": "One Line A Day",
     "description": "Basic note taking application allowing users to create/store/update/delete notes.",
-    "image": "https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80",
+    "image": "onelineimage.png",
     "details": ["Worked on a marketing page for a nine person team"],
     "repository": "https://github.com/Build-Week-OneLineADay",
     "site_link": "https://one-line-a-day-ui-group.netlify.app/index.html",
@@ -47,7 +47,7 @@
   {
     "name": "Capture - Expat Portfolio",
     "description": "Photo Sharing site for travelers to display their favorite shots and memories.",
-    "image": "https://images.unsplash.com/photo-1534398079543-7ae6d016b86a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+    "image": "expatimage.png",
     "details": [
       "Built with a team of eight over a one week period.",
       "I was part of a two person team for back-end work, and solely responsible for all back-end testing.",
@@ -71,7 +71,7 @@
   {
     "name": "Big Brand Welcome Screen",
     "description": "A building directory displaying a clock, calendar and weather updates for Big Brand Tire's headquarters located in Moorpark, CA.",
-    "image": "https://images.unsplash.com/photo-1498579809087-ef1e558fd1da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+    "image": "bbtimage.png",
     "repository": "https://github.com/ackers93/main-screen",
     "site_link": "https://main-screen-bbt-moorpark.netlify.app/",
     "details": [

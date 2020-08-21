@@ -2,10 +2,16 @@
   width: 75%;
   margin-left: 20%;
   @media (max-width: 1050px) {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    align-items: center;
+  }
+
+  .about-me {
+    @media (max-width: 1050px) {
+      width: 80%;
+    }
   }
 }

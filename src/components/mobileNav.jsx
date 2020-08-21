@@ -97,6 +97,7 @@ function MobileNav() {
                 border: "none",
                 backgroundColor: "white",
                 margin: "1rem",
+                marginLeft: "2.5rem",
               }}
               onClick={() => {
                 setOpen(false);
