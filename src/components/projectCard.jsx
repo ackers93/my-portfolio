@@ -12,16 +12,19 @@ const ProjectCard = ({ data }) => {
   };
   const pathToAssets = require.context("../images/");
 
-  console.log(data.image);
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="vertical">
       <div className="card-front">
         <h2>{data.name}</h2>
-        <img src={require(`../images/${data.image}`)}></img>
-        <p>{data.description}</p>
-        <p className="more-info" onClick={handleFlip}>
-          Click for more information
-        </p>
+        <div className="content">
+          <img src={require(`../images/${data.image}`)}></img>
+          <div className="details">
+            <p>{data.description}</p>
+            <p className="more-info" onClick={handleFlip}>
+              Click for more information
+            </p>
+          </div>
+        </div>
       </div>
       <div onMouseLeave={handleFlip} className="card-back">
         <h1>Technology Used</h1>

@@ -345,8 +345,9 @@
 }
 
 .projects h1 {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .projects .project-list {
@@ -363,7 +364,7 @@
 }
 
 .projects .project-list .react-card-flip {
-  width: 30%;
+  width: 80%;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,6 +411,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-height: 100%;
+  min-height: 100%;
+}
+
+.projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .content .details {
+  width: 50%;
 }
 
 .projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .more-info {
