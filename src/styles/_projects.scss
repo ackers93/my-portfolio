@@ -51,22 +51,28 @@
 
               .details {
                 width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 1.5rem;
+
+                .more-info {
+                  border: 3px solid #030027;
+                  background-color: #030027;
+                  color: white;
+                  padding: 7px;
+                  font-size: 1.7rem;
+                  border-radius: 5px;
+                  text-decoration: none;
+
+                  &:hover {
+                    background-color: white;
+                    color: #030027;
+                  }
+                }
               }
             }
 
-            .more-info {
-              border: 3px solid #030027;
-              background-color: #030027;
-              color: white;
-              padding: 7px;
-              border-radius: 5px;
-              text-decoration: none;
-
-              &:hover {
-                background-color: white;
-                color: #030027;
-              }
-            }
             img {
               max-width: 100%;
               display: flex;

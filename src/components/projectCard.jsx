@@ -20,9 +20,9 @@ const ProjectCard = ({ data }) => {
           <img src={require(`../images/${data.image}`)}></img>
           <div className="details">
             <p>{data.description}</p>
-            <p className="more-info" onClick={handleFlip}>
+            <button className="more-info" onClick={handleFlip}>
               Click for more information
-            </p>
+            </button>
           </div>
         </div>
       </div>

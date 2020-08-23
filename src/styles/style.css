@@ -429,18 +429,30 @@
 
 .projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .content .details {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
 }
 
-.projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .more-info {
+.projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .content .details .more-info {
   border: 3px solid #030027;
   background-color: #030027;
   color: white;
   padding: 7px;
+  font-size: 1.7rem;
   border-radius: 5px;
   text-decoration: none;
 }
 
-.projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .more-info:hover {
+.projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .content .details .more-info:hover {
   background-color: white;
   color: #030027;
 }
