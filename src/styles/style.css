@@ -376,8 +376,8 @@
 
 @media (max-width: 1050px) {
   .projects .project-list .react-card-flip {
-    width: 100%;
-    height: 100%;
+    width: inherit;
+    height: inherit;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -395,6 +395,20 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 1050px) {
+  .projects .project-list .react-card-flip .react-card-flipper {
+    max-height: inherit;
+    min-height: inherit;
+  }
+}
+
+@media (max-width: 1050px) {
+  .projects .project-list .react-card-flip .react-card-flipper .react-card-front {
+    max-height: inherit;
+    min-height: inherit;
+  }
 }
 
 .projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front {
@@ -415,6 +429,13 @@
   min-height: 100%;
 }
 
+@media (max-width: 1050px) {
+  .projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front {
+    max-height: inherit;
+    min-height: inherit;
+  }
+}
+
 .projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,6 +446,24 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (max-width: 1050px) {
+  .projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .content .details {
@@ -440,6 +479,12 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.5rem;
+}
+
+@media (max-width: 1050px) {
+  .projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .content .details {
+    width: 90%;
+  }
 }
 
 .projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front .content .details .more-info {
