@@ -42,7 +42,7 @@ function MobileNav() {
           >
             <i class="fas fa-bars"></i>
           </button>
-          <a href=".about">
+          <a href="#about">
             <div className="nav-button">
               <i
                 class="fas fa-male"
@@ -52,7 +52,7 @@ function MobileNav() {
             </div>
           </a>
           <span className="divider"></span>
-          <a href=".projects">
+          <a href="#projects">
             <div className="nav-button">
               <i
                 class="fas fa-project-diagram"
@@ -72,7 +72,7 @@ function MobileNav() {
             </div>
           </a>
           <span className="divider"></span>
-          <a href=".contact">
+          <a href="#contact">
             <div className="nav-button">
               <i
                 class="fas fa-address-book"
@@ -82,7 +82,7 @@ function MobileNav() {
             </div>
           </a>
           <span className="divider"></span>
-          <a href="">
+          <a href="https://resume.creddle.io/resume/9arzwzj2asf">
             <div className="nav-button">
               <i
                 class="fas fa-file"

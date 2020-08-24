@@ -4,7 +4,7 @@ import ProjectData from "../data/projects.json";
 
 function Projects(props) {
   return (
-    <div className="projects">
+    <div id="projects">
       <h1>Projects</h1>
       <div className="project-list">
         {ProjectData.map((data) => {

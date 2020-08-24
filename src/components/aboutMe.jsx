@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutMe() {
   return (
-    <div className="about-me">
+    <div id="about-me">
       <h2>About Me</h2>
       <p>
         Hi I'm Andrew, I'm a full-stack web developer with a particular interest

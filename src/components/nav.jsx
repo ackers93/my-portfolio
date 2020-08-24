@@ -9,7 +9,7 @@ function Nav() {
           class="fas fa-glasses"
           style={{ color: "#030027", fontSize: "3rem" }}
         ></i>
-        <a href=".about">
+        <a href="#about">
           <div className="nav-button">
             <i
               class="fas fa-male"
@@ -19,7 +19,7 @@ function Nav() {
           </div>
         </a>
         <span className="divider"></span>
-        <a href=".projects">
+        <a href="#projects">
           <div className="nav-button">
             <i
               class="fas fa-project-diagram"
@@ -29,7 +29,7 @@ function Nav() {
           </div>
         </a>
         <span className="divider"></span>
-        <a href=".blog">
+        <a href="#blog">
           <div className="nav-button">
             <i
               className="fab fa-dev"
@@ -39,7 +39,7 @@ function Nav() {
           </div>
         </a>
         <span className="divider"></span>
-        <a href=".contact">
+        <a href="#contact">
           <div className="nav-button">
             <i
               class="fas fa-address-book"
@@ -49,7 +49,7 @@ function Nav() {
           </div>
         </a>
         <span className="divider"></span>
-        <a href="">
+        <a href="https://resume.creddle.io/resume/9arzwzj2asf">
           <div className="nav-button">
             <i
               class="fas fa-file"

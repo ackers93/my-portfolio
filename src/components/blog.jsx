@@ -27,11 +27,11 @@ function Blog() {
   console.log(posts);
 
   return (
-    <div className="blog">
+    <div id="blog">
       <div className="about-blog">
         <h1>Blog</h1>
 
-        <p>
+        <p className="blog-info">
           I predominantly blog about my experiences with learning the Rails
           framework, with the intention of writing a list of educational
           blogposts that I wish I'd have had when I began learning.
