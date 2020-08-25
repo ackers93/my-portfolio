@@ -63,8 +63,12 @@ const ProjectCard = ({ data }) => {
             </ul>
           </div>
           <div className="card-back-links">
-            <a href={data.repository}>View Code</a>
-            <a href={data.site_link}>View Deploy</a>
+            <a href={data.repository} target="_blank" rel="noopener noreferrer">
+              View Code
+            </a>
+            <a href={data.site_link} target="_blank" rel="noopener noreferrer">
+              View Deploy
+            </a>
           </div>
         </div>
       </div>

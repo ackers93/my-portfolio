@@ -58,7 +58,7 @@
       "Wrote up all documentation for the NodeJS endpoints, with clear instructions on how to access them"
     ],
     "repository": "https://github.com/bw-exPatJournal",
-    "site_link": "https://expatjournalapp.netlify.app/login",
+    "site_link": "https://bw-expatjournal.github.io/MarketingPage/index.html",
     "tech_stack": {
       "frontend": ["ReactJS", "Redux", "CSS", "Axios"],
       "backend": [

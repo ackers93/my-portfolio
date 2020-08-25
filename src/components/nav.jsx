@@ -52,7 +52,11 @@ function Nav() {
           </div>
         </a>
         <span className="divider"></span>
-        <a href="https://resume.creddle.io/resume/9arzwzj2asf">
+        <a
+          href="https://resume.creddle.io/resume/9arzwzj2asf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="nav-button">
             <i
               className="fas fa-file"
