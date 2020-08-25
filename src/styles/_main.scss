@@ -21,6 +21,7 @@
     align-items: center;
     @media (max-width: 1050px) {
       width: 80%;
+      margin-left: 0%;
     }
 
     h2 {
@@ -30,6 +31,10 @@
 
     p {
       font-size: 1.8rem;
+
+      @media (max-width: 1050px) {
+        font-size: 1rem;
+      }
     }
   }
 }

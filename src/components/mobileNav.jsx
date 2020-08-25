@@ -62,7 +62,7 @@ function MobileNav() {
             </div>
           </a>
           <span className="divider"></span>
-          <a href=".blog">
+          <a href="#blog">
             <div className="nav-button">
               <i
                 className="fab fa-dev"

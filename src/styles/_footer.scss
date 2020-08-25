@@ -4,6 +4,11 @@
   width: 90%;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 1050px) {
+    width: 100%;
+    margin-left: 0rem;
+  }
   footer {
     border-radius: 5rem;
     width: 60%;
@@ -11,18 +16,31 @@
     margin-top: 8rem;
     display: flex;
     flex-direction: column;
-    align-self: center;
-    justify-content: center;
     align-items: center;
+
+    @media (max-width: 1050px) {
+      border-radius: 0rem;
+      width: 100%;
+    }
 
     h2 {
       align-self: center;
       color: white;
+      @media (max-width: 1050px) {
+        display: flex;
+        margin-left: 1rem;
+      }
     }
 
-    .contact {
+    #contact {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
+      align-items: center;
+
+      @media (max-width: 1050px) {
+        padding-left: 3rem;
+      }
     }
   }
 }

@@ -289,6 +289,7 @@
 @media (max-width: 1050px) {
   .main-content #about-me {
     width: 80%;
+    margin-left: 0%;
   }
 }
 
@@ -299,6 +300,12 @@
 
 .main-content #about-me p {
   font-size: 1.8rem;
+}
+
+@media (max-width: 1050px) {
+  .main-content #about-me p {
+    font-size: 1rem;
+  }
 }
 
 .title {
@@ -655,6 +662,13 @@
           justify-content: center;
 }
 
+@media (max-width: 1050px) {
+  .footer {
+    width: 100%;
+    margin-left: 0rem;
+  }
+}
+
 .footer footer {
   border-radius: 5rem;
   width: 60%;
@@ -667,14 +681,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 1050px) {
+  .footer footer {
+    border-radius: 0rem;
+    width: 100%;
+  }
 }
 
 .footer footer h2 {
@@ -684,14 +700,34 @@
   color: white;
 }
 
-.footer footer .contact {
+@media (max-width: 1050px) {
+  .footer footer h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 1rem;
+  }
+}
+
+.footer footer #contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1050px) {
+  .footer footer #contact {
+    padding-left: 3rem;
+  }
 }
 
 .skills-div {
@@ -706,7 +742,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 10rem;
-  background-color: #d3d6f2;
+  background-color: #f8f7ff;
   border-radius: 25px;
   border: 3px solid #fcba03;
   margin: 40px 0px;
