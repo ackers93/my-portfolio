@@ -29,39 +29,43 @@ const ProjectCard = ({ data }) => {
         </div>
       </div>
       <div onMouseLeave={handleFlip} className="card-back">
-        <h1>Technology Used</h1>
-        <div className="project">
-          <div className="front-end-stack">
-            <h2>Front-end</h2>
+        <div className="content">
+          <h1>Technology Used</h1>
+          <div className="project">
+            <div className="stack">
+              <div className="front-end-stack">
+                <h2>Front-end</h2>
+                <ul>
+                  {data.tech_stack.frontend.map((res) => {
+                    return <li>{res}</li>;
+                  })}
+                </ul>
+              </div>
+              <div className="back-end-stack">
+                <h2>Back-end</h2>
+                <ul>
+                  {data.tech_stack.backend.map((res) => {
+                    return <li>{res}</li>;
+                  })}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="project-info">
+            <h2>Details</h2>
+            <hr
+              style={{ width: "198px", color: "#197278", marginLeft: "50px" }}
+            />
             <ul>
-              {data.tech_stack.frontend.map((res) => {
+              {data.details.map((res) => {
                 return <li>{res}</li>;
               })}
             </ul>
           </div>
-          <div className="back-end-stack">
-            <h2>Back-end</h2>
-            <ul>
-              {data.tech_stack.backend.map((res) => {
-                return <li>{res}</li>;
-              })}
-            </ul>
+          <div className="card-back-links">
+            <a href={data.repository}>View Code</a>
+            <a href={data.site_link}>View Deploy</a>
           </div>
-        </div>
-        <div className="project-info">
-          <h2>About the project</h2>
-          <hr
-            style={{ width: "198px", color: "#197278", marginLeft: "50px" }}
-          />
-          <ul>
-            {data.details.map((res) => {
-              return <li>{res}</li>;
-            })}
-          </ul>
-        </div>
-        <div className="card-back-links">
-          <a href={data.repository}>View Code</a>
-          <a href={data.site_link}>View Deploy</a>
         </div>
       </div>
     </ReactCardFlip>
