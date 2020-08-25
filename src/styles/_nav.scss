@@ -46,6 +46,12 @@
       }
     }
 
+    img {
+      border-radius: 50%;
+      width: 50%;
+      margin: 2rem 0rem;
+      filter: drop-shadow(-20px 15px 10px darkgrey);
+    }
     h3 {
       font-size: 3rem;
       font-family: "Kaushan Script", cursive;
@@ -67,6 +73,7 @@
         display: flex;
         align-items: center;
         flex-direction: row;
+        margin: 1rem 0rem;
         transition: transform 0.2s;
 
         &:hover {

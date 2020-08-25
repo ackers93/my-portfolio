@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Skills from "./skills";
 
 function MobileNav() {
   const [open, setOpen] = useState(true);
@@ -20,7 +19,7 @@ function MobileNav() {
             setOpen(false);
           }}
         >
-          <i class="fas fa-bars"></i>
+          <i className="fas fa-bars"></i>
         </button>
       </div>
     );
@@ -40,12 +39,12 @@ function MobileNav() {
               setOpen(true);
             }}
           >
-            <i class="fas fa-bars"></i>
+            <i className="fas fa-bars"></i>
           </button>
           <a href="#about">
             <div className="nav-button">
               <i
-                class="fas fa-male"
+                className="fas fa-male"
                 style={{ color: "#030027", fontSize: "2rem" }}
               ></i>
               <h3>About</h3>
@@ -55,7 +54,7 @@ function MobileNav() {
           <a href="#projects">
             <div className="nav-button">
               <i
-                class="fas fa-project-diagram"
+                className="fas fa-project-diagram"
                 style={{ color: "#030027", fontSize: "2rem" }}
               ></i>
               <h3> My Work</h3>
@@ -75,7 +74,7 @@ function MobileNav() {
           <a href="#contact">
             <div className="nav-button">
               <i
-                class="fas fa-address-book"
+                className="fas fa-address-book"
                 style={{ color: "#030027", fontSize: "2rem" }}
               ></i>
               <h3>Contact Me</h3>
@@ -85,26 +84,11 @@ function MobileNav() {
           <a href="https://resume.creddle.io/resume/9arzwzj2asf">
             <div className="nav-button">
               <i
-                class="fas fa-file"
+                className="fas fa-file"
                 style={{ color: "#030027", fontSize: "2rem" }}
               ></i>
               <h3>Resume</h3>
             </div>
-            <button
-              style={{
-                color: "#030027",
-                fontSize: "2.5rem",
-                border: "none",
-                backgroundColor: "white",
-                margin: "1rem",
-                marginLeft: "2.5rem",
-              }}
-              onClick={() => {
-                setOpen(false);
-              }}
-            >
-              <i class="fas fa-caret-up"></i>
-            </button>
           </a>
         </nav>
       </div>

@@ -29,6 +29,17 @@
       text-decoration: underline;
     }
 
+    img {
+      border-radius: 50%;
+      width: 50%;
+      margin: 2rem 0rem;
+      filter: drop-shadow(-20px 15px 10px darkgrey);
+
+      @media (min-width: 1050px) {
+        display: none;
+      }
+    }
+
     p {
       font-size: 1.8rem;
 

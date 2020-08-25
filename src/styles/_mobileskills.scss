@@ -1,0 +1,32 @@
+.mobile-skills-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 3px solid #030027;
+  margin: 40px 2rem;
+  padding: 10px;
+
+  @media (min-width: 1050px) {
+    display: none;
+  }
+
+  .mobile-skills-header {
+    font-size: 1.3rem;
+    font-family: "Inter", sans-serif;
+  }
+
+  .mobile-skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 2.5rem;
+      padding: 6px;
+    }
+  }
+}

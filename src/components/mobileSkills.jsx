@@ -1,10 +1,9 @@
 import React from "react";
 
-function Skills() {
+function MobileSkills() {
   return (
-    <div className="skills-div">
-      <h3 className="skills-header">Skills</h3>
-      <div className="skill-list">
+    <div className="mobile-skills-div">
+      <div className="mobile-skill-list">
         <i className="devicon-git-plain"></i>
 
         <i className="devicon-javascript-plain colored"></i>
@@ -34,4 +33,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default MobileSkills;

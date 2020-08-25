@@ -1,12 +1,16 @@
 import React from "react";
+import MobileSkills from "./mobileSkills";
+
+import profilepic from "../images/profilepic.png";
 
 function AboutMe() {
   return (
     <div id="about-me">
       <h2>About Me</h2>
+      <img src={profilepic} alt="Andrew Ackerman Kayaking in New Zealand" />
       <p>
         Hi I'm Andrew, I'm a full-stack web developer with a particular interest
-        in front-end development. My specialties include Javascript, React,
+        in front-end development. 💻 My specialties include Javascript, React,
         Node, Express and Ruby on Rails.
       </p>
       <p>
@@ -17,9 +21,10 @@ function AboutMe() {
         others.
       </p>
       <p>
-        Aside from tech, my passions include hiking,🥾 traveling,🌏 reading
-        non-fiction 📖 and cooking.🍳
+        Aside from tech, my passions include hiking, 🥾 traveling, 🌏 reading
+        non-fiction 📖 and cooking. 🍳
       </p>
+      <MobileSkills />
     </div>
   );
 }

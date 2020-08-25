@@ -101,6 +101,14 @@
   }
 }
 
+.nav-div nav img {
+  border-radius: 50%;
+  width: 50%;
+  margin: 2rem 0rem;
+  -webkit-filter: drop-shadow(-20px 15px 10px darkgrey);
+          filter: drop-shadow(-20px 15px 10px darkgrey);
+}
+
 .nav-div nav h3 {
   font-size: 3rem;
   font-family: "Kaushan Script", cursive;
@@ -133,6 +141,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 1rem 0rem;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -151,7 +160,9 @@
 }
 
 .mobile-nav {
+  width: 100%;
   border-bottom: 1px dashed #030027;
+  margin-bottom: 4rem;
 }
 
 @media (min-width: 1050px) {
@@ -298,6 +309,20 @@
   text-decoration: underline;
 }
 
+.main-content #about-me img {
+  border-radius: 50%;
+  width: 50%;
+  margin: 2rem 0rem;
+  -webkit-filter: drop-shadow(-20px 15px 10px darkgrey);
+          filter: drop-shadow(-20px 15px 10px darkgrey);
+}
+
+@media (min-width: 1050px) {
+  .main-content #about-me img {
+    display: none;
+  }
+}
+
 .main-content #about-me p {
   font-size: 1.8rem;
 }
@@ -348,12 +373,14 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    word-spacing: 10rem;
   }
 }
 
 .title .name h1 {
   font-size: 6rem;
   font-family: "Pathway Gothic One", sans-serif;
+  line-height: 0%;
 }
 
 @media (max-width: 1050px) {
@@ -555,13 +582,19 @@
 }
 
 #projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front img {
-  max-width: 100%;
+  height: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-negative: inherit;
       flex-shrink: inherit;
   width: 26rem;
+}
+
+@media (max-width: 1050px) {
+  #projects .project-list .react-card-flip .react-card-flipper .react-card-front .card-front img {
+    width: 90%;
+  }
 }
 
 #projects .project-list .react-card-flip .react-card-flipper .card-back {
@@ -629,6 +662,12 @@
   font-size: 2rem;
 }
 
+@media (max-width: 1050px) {
+  #blog .about-blog .blog-info {
+    font-size: 1rem;
+  }
+}
+
 #blog .posts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -643,11 +682,19 @@
 #blog .posts .post {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  border: 4px solid #030027;
-  border-radius: 10px;
-  width: 15%;
+  outline: 4px solid #030027;
+  background-color: white;
+  width: 30%;
   margin: 20px;
   padding: 2%;
+  -webkit-filter: drop-shadow(20px 15px 10px darkgrey);
+          filter: drop-shadow(20px 15px 10px darkgrey);
+  -webkit-transition: border 0.5s;
+  transition: border 0.5s;
+}
+
+#blog .posts .post:hover {
+  outline: 9px solid #030027;
 }
 
 @media (max-width: 1050px) {
@@ -665,6 +712,11 @@
   font-size: 1.3rem;
   text-decoration: none;
   color: black;
+}
+
+#blog .posts .post a p {
+  font-size: 1rem;
+  margin: 0.5rem;
 }
 
 .footer {
@@ -758,11 +810,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 10rem;
+  max-width: 15rem;
   background-color: #f8f7ff;
   border-radius: 25px;
   border: 3px solid #fcba03;
-  margin: 40px 0px;
+  margin: 40px 2rem;
   padding: 10px;
 }
 
@@ -780,10 +832,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .skills-div .skill-list i {
-  font-size: 2.5rem;
+  font-size: 4rem;
   padding: 6px;
 }
 
@@ -886,13 +941,52 @@
   }
 }
 
-.App {
+.mobile-skills-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: 3px solid #030027;
+  margin: 40px 2rem;
+  padding: 10px;
+}
+
+@media (min-width: 1050px) {
+  .mobile-skills-div {
+    display: none;
+  }
+}
+
+.mobile-skills-div .mobile-skills-header {
+  font-size: 1.3rem;
+  font-family: "Inter", sans-serif;
+}
+
+.mobile-skills-div .mobile-skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile-skills-div .mobile-skill-list i {
+  font-size: 2.5rem;
+  padding: 6px;
 }
 /*# sourceMappingURL=style.css.map */
