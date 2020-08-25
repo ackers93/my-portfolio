@@ -10,6 +10,7 @@ function Title() {
 
       <h2>Full-Stack Developer</h2>
       <h3>andrew.ackers@gmail.com</h3>
+      <h3>(805) 905-5948</h3>
     </div>
   );
 }

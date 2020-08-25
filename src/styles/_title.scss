@@ -11,22 +11,34 @@
   .name {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 
     @media (max-width: 1050px) {
       width: 85%;
       flex-direction: column;
-      align-content: center;
       align-items: center;
     }
     h1 {
-      font-size: 4rem;
-      font-family: "Inter", sans-serif;
-      .firstname {
-        margin-right: 10rem;
-        @media (max-width: 1050px) {
-        }
+      font-size: 6rem;
+      font-family: "Pathway Gothic One", sans-serif;
+
+      @media (max-width: 1050px) {
+        font-size: 3.2rem;
       }
+    }
+  }
+
+  h2 {
+    font-size: 3rem;
+    border: 4px solid black;
+    padding: 1rem 4rem;
+    transition: font-size 2s;
+
+    &:hover {
+      font-size: 3.5rem;
+    }
+    @media (max-width: 1050px) {
+      font-size: 2rem;
+      padding: 1rem 3rem;
     }
   }
 }
