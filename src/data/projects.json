@@ -28,7 +28,11 @@
     "name": "One Line A Day",
     "description": "Basic note taking application allowing users to create/store/update/delete notes.",
     "image": "onelineimage.png",
-    "details": ["Worked on a marketing page for a nine person team"],
+    "details": [
+      "Worked on a marketing page for a nine person team",
+      "Created a fully styled landing page, and a page to display Team members",
+      "Reached the goal of having fully responsive pages"
+    ],
     "repository": "https://github.com/Build-Week-OneLineADay",
     "site_link": "https://one-line-a-day-ui-group.netlify.app/index.html",
     "tech_stack": {
@@ -50,8 +54,8 @@
     "image": "expatimage.png",
     "details": [
       "Built with a team of eight over a one week period.",
-      "I was part of a two person team for back-end work, and solely responsible for all back-end testing.",
-      "I was also responsible for creating all documentation for the NodeJS endpoints."
+      "Created a NodeJS back-end to match plan decided by team, and was solely responsible for all back-end testing.",
+      "Wrote up all documentation for the NodeJS endpoints, with clear instructions on how to access them"
     ],
     "repository": "https://github.com/bw-exPatJournal",
     "site_link": "https://expatjournalapp.netlify.app/login",
