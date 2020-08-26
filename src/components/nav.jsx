@@ -2,6 +2,7 @@ import React from "react";
 import Skills from "./skills";
 
 import profilepic from "../images/profilepic.png";
+import resume from "./AndrewAckermanResume.pdf";
 
 function Nav() {
   return (
@@ -52,11 +53,7 @@ function Nav() {
           </div>
         </a>
         <span className="divider"></span>
-        <a
-          href="https://resume.creddle.io/resume/9arzwzj2asf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={resume} download="Andrew_Ackerman_Resume">
           <div className="nav-button">
             <i
               className="fas fa-file"
