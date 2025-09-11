@@ -1,41 +1,23 @@
 {
-  "name": "my-portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/dom": "^7.22.2",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "axios": "^0.21.1",
-    "lodash": "^4.17.20",
-    "react": "^16.13.1",
-    "react-card-flip": "^1.0.10",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "sass": "^1.26.3",
-    "typescript": "^3.9.7",
-    "yarn": "^1.22.4"
-  },
+  "name": "eleventy-scss-template",
+  "version": "1.0.0",
+  "description": "A simple Eleventy and SCSS template for static websites",
+  "main": "index.js",
   "scripts": {
-    "start": "NODE_PATH=src react-scripts start",
-    "build": "CI= react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "npm run scss:build && eleventy",
+    "dev": "npm-run-all --parallel scss:watch eleventy:serve",
+    "watch": "npm-run-all --parallel scss:watch eleventy --watch",
+    "clean": "rm -rf _site",
+    "scss:build": "sass src/scss/main.scss src/css/main.css --no-source-map --style=compressed",
+    "scss:watch": "sass --watch src/scss/main.scss:src/css/main.css --no-source-map --style=compressed",
+    "eleventy:serve": "eleventy --serve"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": ["eleventy", "scss", "static-site", "template"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "sass": "^1.69.5",
+    "npm-run-all": "^4.1.5"
   }
-}
+} 
