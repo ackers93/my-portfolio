@@ -1,9 +1,215 @@
 ---
 layout: base.njk
-title: "Eleventy SCSS Template"
-description: "A simple, modern static website template built with Eleventy and SCSS"
+title: "Andrew Ackerman - Full Stack Developer"
+description: "Experienced full stack developer specializing in Ruby on Rails, React, and modern web technologies. Passionate about building scalable applications and delivering exceptional user experiences."
 ---
 
-<div class="index">
-  INDEX
+<main class="portfolio">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Hi, I'm <span class="hero__name">Andrew Ackerman</span>
+        </h1>
+        <p class="hero__subtitle">Full Stack Developer & Software Engineer</p>
+        <p class="hero__description">
+          I build modern web applications with Ruby on Rails, React, and cloud technologies. 
+          Passionate about creating scalable solutions, implementing security best practices, 
+          and delivering exceptional user experiences for government agencies and businesses.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__avatar">
+          <div class="hero__avatar-placeholder">
+            <svg width="200" height="200" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="100" fill="#e2e8f0"/>
+              <circle cx="100" cy="80" r="30" fill="#94a3b8"/>
+              <path d="M50 160 Q100 120 150 160" stroke="#94a3b8" stroke-width="8" fill="none"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about__container">
+      <h2 class="section__title">About Me</h2>
+      <div class="about__content">
+        <div class="about__text">
+          <p>
+            I'm a passionate full-stack developer with 5+ years of experience building 
+            web applications that make a difference. Currently working as a Software Engineer 
+            at LexisNexis Risk Solutions, I specialize in Ruby on Rails, React, and cloud 
+            infrastructure development.
+          </p>
+          <p>
+            I founded Ventura Coast Web Design LLC, where I deliver modern, responsive websites 
+            and enhanced Google Business presence for local clients. I'm passionate about 
+            security-first development, CI/CD pipelines, and creating scalable solutions that 
+            solve real-world problems.
+          </p>
+        </div>
+        <div class="about__skills">
+          <h3>Core Skills</h3>
+          <div class="skills__grid">
+            <span class="skill__tag">Ruby on Rails</span>
+            <span class="skill__tag">React</span>
+            <span class="skill__tag">JavaScript</span>
+            <span class="skill__tag">TypeScript</span>
+            <span class="skill__tag">Python</span>
+            <span class="skill__tag">Go</span>
+            <span class="skill__tag">AWS</span>
+            <span class="skill__tag">Docker</span>
+            <span class="skill__tag">Kubernetes</span>
+            <span class="skill__tag">PostgreSQL</span>
+            <span class="skill__tag">Git</span>
+            <span class="skill__tag">REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="projects__container">
+      <h2 class="section__title">Featured Projects</h2>
+      <div class="projects__grid">
+        <article class="project__card">
+          <div class="project__image">
+            <div class="project__placeholder">
+              <svg width="100%" height="200" viewBox="0 0 400 200" fill="none">
+                <rect width="400" height="200" fill="#f1f5f9"/>
+                <rect x="50" y="50" width="300" height="100" fill="#e2e8f0" rx="8"/>
+                <circle cx="100" cy="100" r="20" fill="#94a3b8"/>
+                <rect x="130" y="80" width="120" height="8" fill="#94a3b8" rx="4"/>
+                <rect x="130" y="95" width="80" height="8" fill="#cbd5e1" rx="4"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project__content">
+            <h3 class="project__title">Solicitation Builder</h3>
+            <p class="project__description">
+              A Ruby on Rails application enabling government agencies to streamline 
+              procurement document creation. Built comprehensive automated test suite 
+              with Capybara and MagicTest for large monolithic application.
+            </p>
+            <div class="project__tech">
+              <span class="tech__tag">Ruby on Rails</span>
+              <span class="tech__tag">Capybara</span>
+              <span class="tech__tag">MagicTest</span>
+              <span class="tech__tag">PostgreSQL</span>
+            </div>
+            <div class="project__links">
+              <a href="#" class="project__link">Case Study</a>
+              <a href="#" class="project__link">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project__card">
+          <div class="project__image">
+            <div class="project__placeholder">
+              <svg width="100%" height="200" viewBox="0 0 400 200" fill="none">
+                <rect width="400" height="200" fill="#f1f5f9"/>
+                <rect x="50" y="50" width="300" height="100" fill="#e2e8f0" rx="8"/>
+                <rect x="70" y="70" width="40" height="40" fill="#3b82f6" rx="4"/>
+                <rect x="120" y="70" width="40" height="40" fill="#10b981" rx="4"/>
+                <rect x="170" y="70" width="40" height="40" fill="#f59e0b" rx="4"/>
+                <rect x="220" y="70" width="40" height="40" fill="#ef4444" rx="4"/>
+                <rect x="270" y="70" width="40" height="40" fill="#8b5cf6" rx="4"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project__content">
+            <h3 class="project__title">Government Agency Solutions</h3>
+            <p class="project__description">
+              Multiple Ruby on Rails applications supporting government agencies in 
+              delivering equitable law enforcement and justice solutions. Integrated 
+              RESTful APIs and optimized AWS cloud environments.
+            </p>
+            <div class="project__tech">
+              <span class="tech__tag">Ruby on Rails</span>
+              <span class="tech__tag">AWS</span>
+              <span class="tech__tag">Elasticsearch</span>
+              <span class="tech__tag">REST APIs</span>
+            </div>
+            <div class="project__links">
+              <a href="#" class="project__link">Case Study</a>
+              <a href="#" class="project__link">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project__card">
+          <div class="project__image">
+            <div class="project__placeholder">
+              <svg width="100%" height="200" viewBox="0 0 400 200" fill="none">
+                <rect width="400" height="200" fill="#f1f5f9"/>
+                <rect x="50" y="50" width="300" height="100" fill="#e2e8f0" rx="8"/>
+                <rect x="70" y="70" width="60" height="60" fill="#1f2937" rx="4"/>
+                <rect x="140" y="70" width="60" height="60" fill="#374151" rx="4"/>
+                <rect x="210" y="70" width="60" height="60" fill="#4b5563" rx="4"/>
+                <rect x="280" y="70" width="60" height="60" fill="#6b7280" rx="4"/>
+              </svg>
+            </div>
+          </div>
+          <div class="project__content">
+            <h3 class="project__title">Ventura Coast Web Design</h3>
+            <p class="project__description">
+              Founded and operate a web design business delivering modern, responsive 
+              websites and enhanced Google Business presence for local clients. 
+              Built reusable Eleventy templates for consistent branding.
+            </p>
+            <div class="project__tech">
+              <span class="tech__tag">Eleventy</span>
+              <span class="tech__tag">JavaScript</span>
+              <span class="tech__tag">CSS</span>
+              <span class="tech__tag">SEO</span>
+            </div>
+            <div class="project__links">
+              <a href="#" class="project__link">Live Demo</a>
+              <a href="#" class="project__link">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact__container">
+      <h2 class="section__title">Let's Work Together</h2>
+      <p class="contact__description">
+        I'm always interested in new opportunities and exciting projects. 
+        Let's discuss how we can work together!
+      </p>
+      <div class="contact__info">
+        <div class="contact__item">
+          <h3>Email</h3>
+          <a href="mailto:andrew.ackers@gmail.com">andrew.ackers@gmail.com</a>
+        </div>
+        <div class="contact__item">
+          <h3>Phone</h3>
+          <a href="tel:805-905-5948">(805) 905-5948</a>
+        </div>
+        <div class="contact__item">
+          <h3>LinkedIn</h3>
+          <a href="https://linkedin.com/in/andrew-ackerman-89743018b" target="_blank">linkedin.com/in/andrew-ackerman</a>
+        </div>
+        <div class="contact__item">
+          <h3>GitHub</h3>
+          <a href="https://github.com/ackers93" target="_blank">github.com/ackers93</a>
+        </div>
+      </div>
 </div>
+  </section>
+</main>
