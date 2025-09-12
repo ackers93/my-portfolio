@@ -52,7 +52,7 @@
   padding: 2rem 0;
 
   @include mixins.responsive(variables.$breakpoint-md) {
-    padding: 4rem 0;
+    padding: 0rem 0;
   }
 }
 
