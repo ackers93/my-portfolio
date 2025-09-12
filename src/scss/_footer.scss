@@ -1,1 +1,44 @@
 @use "variables";
+
+.site-footer {
+  background: variables.$background-dark;
+  color: white;
+  padding: variables.$spacing-2xl 0;
+
+  &__container {
+    max-width: variables.$container-max-width;
+    margin: 0 auto;
+    padding: 0 variables.$container-padding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: variables.$breakpoint-md) {
+      flex-direction: column;
+      gap: variables.$spacing-lg;
+      text-align: center;
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: variables.$spacing-lg;
+
+    a {
+      color: variables.$text-lighter;
+      text-decoration: none;
+      font-weight: variables.$font-weight-medium;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+p {
+  margin: 0;
+  color: variables.$text-lighter;
+}

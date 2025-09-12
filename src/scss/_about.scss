@@ -1,1 +1,64 @@
 @use "variables";
+
+.about {
+  padding: variables.$spacing-3xl 0;
+  background: white;
+
+  &__container {
+    max-width: variables.$container-max-width;
+    margin: 0 auto;
+    padding: 0 variables.$container-padding;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: variables.$spacing-3xl;
+    align-items: start;
+
+    @media (max-width: variables.$breakpoint-lg) {
+      grid-template-columns: 1fr;
+      gap: variables.$spacing-2xl;
+    }
+  }
+
+  &__text {
+    p {
+      font-size: 1.125rem;
+      line-height: 1.7;
+      margin-bottom: variables.$spacing-lg;
+    }
+  }
+
+  &__skills {
+    h3 {
+      margin-bottom: variables.$spacing-lg;
+      color: variables.$text-color;
+    }
+  }
+}
+
+.skills__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: variables.$spacing-sm;
+}
+
+.skill__tag {
+  display: inline-block;
+  padding: variables.$spacing-sm variables.$spacing-md;
+  background: variables.$background-light;
+  color: variables.$text-color;
+  border-radius: variables.$radius-md;
+  font-size: 0.875rem;
+  font-weight: variables.$font-weight-medium;
+  border: 1px solid variables.$border-color;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: variables.$primary-color;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: variables.$shadow-md;
+  }
+}
