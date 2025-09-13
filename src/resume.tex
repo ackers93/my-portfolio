@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Andrew Ackerman
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Andrew Ackerman} \\ \vspace{1pt}
+    \small 805-905-5948 $|$ \href{mailto:andrew.ackers@gmail.com}{andrew.ackers@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/andrew-ackerman-89743018b/}{linkedin.com/in/andrew-ackerman-89743018b} $|$
+    \href{https://github.com/ackers93}{github.com/ackers93}
+\end{center}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages:} Ruby, JavaScript, TypeScript, Python, Go, SQL, HTML, CSS \\
+    \textbf{Frameworks:} Ruby on Rails, React, AngularJS, Django \\
+    \textbf{Developer Tools:} Git, GitHub, GitLab, Bitbucket, Docker, VS Code, Azure, AWS, Kubernetes, SendGrid, Checkmarx, Postman, Jira, Notion \\
+    \textbf{Libraries:} MagicTest, NumPy, Nokogiri, JSON, Devise, CanCanCan, RSpec, Capybara, RailsAdmin, Moment.js, jQuery, Chart.js, Redux, Fetch API, Axios, Jest, React Hook Form, Babel \\
+    \textbf{Databases:} MySQL, PostgreSQL, SQLite \\
+    \textbf{Specialties:} Backend development, REST API design, software security, cloud infrastructure, test automation
+  }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+  {Owner / Developer – JavaScript / HTML5 / CSS / Eleventy}{Jul. 2025 -- Present}
+  {Ventura Coast Web Design LLC}{Moorpark, CA (Remote)}
+  \resumeItemListStart
+    \resumeItem{Founded and operate a web design business delivering modern, responsive websites and enhanced Google Business presence for local clients.}
+    \resumeItem{Designed and developed reusable Eleventy templates, reducing project turnaround time and enabling consistent branding for marketing campaigns.}
+    \resumeItem{Managed full sales cycle including lead generation, cold calling, proposals, and client onboarding.}
+    \resumeItem{Optimized websites for SEO and performance, improving search rankings and user experience.}
+    \resumeItem{Provided ongoing client support, including website maintenance, analytics reporting, and feature updates.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Software Engineer - Ruby on Rails / JavaScript / Go / AngularJS / Node.js}{Oct. 2021 -- Present}
+  {LexisNexis Risk Solutions}{Boca Raton, FL (Remote)}
+  \resumeItemListStart
+    \resumeItem{Developed multiple Ruby on Rails applications supporting government agencies in delivering equitable law enforcement and justice solutions.}
+    \resumeItem{Designed Git workflows and implemented CI/CD pipelines using GitHub Actions and Rancher, improving release speed and reliability.}
+    \resumeItem{Provided 24/7 client support in an on-call rotation, resolving critical issues under pressure.}
+    \resumeItem{Enhanced applications through Agile and Scrumban workflows, collaborating daily with product and project managers via Jira and Confluence.}
+    \resumeItem{Partnered with QA teams to ensure comprehensive testing coverage and accurate automation results.}
+    \resumeItem{Integrated and debugged RESTful APIs, including Google Earth, Google Maps, Odoo, and Twilio.}
+    \resumeItem{Implemented Checkmarx software security scans across multiple applications, fostering a security-first development culture.}
+    \resumeItem{Optimized AWS and Azure cloud environments, including Elasticsearch, S3, SDS, SES, Kibana, and Azure Cloud Services.}
+    \resumeItem{Processed large cellular tower datasets in backend services using Ruby, Go, and Node.js to deliver actionable client insights.}
+    \resumeItem{Built user-friendly front-end interfaces with Ruby ERB, JavaScript, TypeScript, jQuery, AngularJS, DataTables, and HTML/CSS.}
+    \resumeItem{Migrated legacy Ruby on Rails applications to AngularJS and Node.js.}
+    \resumeItem{Designed and maintained MySQL databases with a focus on scalability and clean schema design.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Software Engineer - Ruby on Rails / ReactJS / JavaScript}{May 2021 -- Aug. 2021}
+  {Airship}{Birmingham, AL (Remote)}
+  \resumeItemListStart
+    \resumeItem{Worked at a Ruby on Rails and ReactJS development agency on small business projects, collaborating directly with clients.}
+    \resumeItem{Delivered features and resolved bugs using Ruby on Rails, ReactJS, JavaScript, and jQuery.}
+    \resumeItem{Managed CI/CD pipelines via GitHub Actions and deployed to Heroku and AWS.}
+    \resumeItem{Executed sprint-based development, completing tickets aligned with client requirements using Jira and Notion.}
+    \resumeItem{Collaborated closely with product managers and QA, producing proof-of-concept builds for clear alignment on deliverables.}
+    \resumeItem{Planned and designed full features, including wireframes and task breakdowns.}
+    \resumeItem{Migrated client infrastructure from Heroku to AWS, upgrading applications to modern stacks.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Software Engineer – Ruby on Rails / MagicTest / Capybara / JavaScript}{Sep. 2020 -- Apr. 2021}
+  {Authorium (formerly City Innovate, Inc.)}{San Francisco, CA (Remote)}
+  \resumeItemListStart
+    \resumeItem{Developed a Ruby on Rails application (\textit{Solicitation Builder}) enabling government agencies to streamline procurement document creation.}
+    \resumeItem{Built a comprehensive automated test suite with Capybara and MagicTest for a large monolithic application.}
+    \resumeItem{Created an algorithm to auto-generate test fixtures by interacting with the application UI.}
+    \resumeItem{Implemented high-impact features including weekly task digest emails and password reset functionality.}
+    \resumeItem{Resolved UI and backend issues to improve performance and usability.}
+    \resumeItem{Paired with engineers to share knowledge and maintain high code quality.}
+    \resumeItem{Organized virtual team-building events, including social gatherings and coffee chats.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Computer Science Teacher - Django / Python / React / JavaScript}{May 2020 -- Sep. 2020}
+  {BloomTech (formerly Lambda School)}{San Francisco, CA (Remote)}
+  \resumeItemListStart
+    \resumeItem{Taught daily projects and weekly sprints in Django, Python, data structures, and algorithms.}
+    \resumeItem{Led a team of eight students in simulated work environments, facilitating daily standups.}
+    \resumeItem{Provided 1:1 mentorship to support individual student growth and skill development.}
+    \resumeItem{Reviewed and provided feedback on web projects to improve efficiency and maintainability.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Software Development Intern - Ruby on Rails / JavaScript / HTML5}{Feb. 2019 -- Sep. 2019}
+  {Bullet Train, Inc.}{Los Angeles, CA}
+  \resumeItemListStart
+    \resumeItem{Completed a self-guided apprenticeship focused on mastering Ruby on Rails.}
+    \resumeItem{Authored technical blog posts documenting the Ruby on Rails learning process.}
+    \resumeItem{Identified and resolved client-facing bugs in the Bullet Train framework.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {BloomTech (formerly Lambda School)}{Sep. 2019 -- May 2020}
+  {Full-Stack Web Development Certificate}{Remote}
+\resumeSubheading
+  {BCITO NZ}{Jan. 2013 -- Apr. 2016}
+  {Certificate in Carpentry}{Christchurch, NZ}
+\resumeSubheading
+  {NCEA NZ}{Dec. 2009}
+  {National Certificate of Educational Achievement (High School Diploma)}{Christchurch, NZ}
+\resumeSubHeadingListEnd
+
+\end{document}

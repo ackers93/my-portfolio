@@ -1,0 +1,135 @@
+@use "variables" as *;
+
+.resume-header {
+  text-align: center;
+  padding: $spacing-2xl;
+  background: $background-light;
+  box-shadow: $shadow-sm;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: $spacing-xs;
+    color: $primary-color;
+    font-weight: $font-weight-bold;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: $text-light;
+    margin-bottom: $spacing-sm;
+  }
+
+  .contact a {
+    color: $primary-dark;
+    text-decoration: none;
+    margin: 0 $spacing-xs;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .btn-primary {
+    display: inline-block;
+    margin-top: $spacing-md;
+    background: $primary-color;
+    color: $background-color;
+    padding: $spacing-sm $spacing-lg;
+    border-radius: $radius-md;
+    font-weight: $font-weight-medium;
+    text-decoration: none;
+    box-shadow: $shadow-sm;
+
+    &:hover {
+      background: $primary-dark;
+    }
+  }
+}
+
+.resume-content {
+  max-width: 800px;
+  margin: $spacing-2xl auto;
+  padding: 0 $spacing-md;
+
+  section {
+    margin-bottom: $spacing-2xl;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      gap: $spacing-sm;
+      font-size: 1.4rem;
+      font-weight: $font-weight-semibold;
+      color: $primary-color;
+      border-bottom: 2px solid $accent-color;
+      padding-bottom: $spacing-xs;
+      margin-bottom: $spacing-lg;
+    }
+
+    .job {
+      position: relative;
+      padding-left: $spacing-xl;
+      margin-bottom: $spacing-xl;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0.5rem;
+        top: 0.5rem;
+        bottom: -$spacing-md;
+        width: 2px;
+        background: $border-light;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.5rem;
+        width: 0.75rem;
+        height: 0.75rem;
+        background: $primary-color;
+        border-radius: 50%;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: $font-weight-semibold;
+      }
+
+      .date {
+        font-size: 0.9rem;
+        color: $text-light;
+        display: block;
+        margin-bottom: $spacing-xs;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 1.2rem;
+
+        li {
+          margin-bottom: $spacing-xs;
+          color: $text-color;
+        }
+      }
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: $spacing-sm;
+
+      span {
+        background: linear-gradient(135deg, $primary-light, $primary-dark);
+        color: $background-color;
+        padding: $spacing-xs $spacing-md;
+        border-radius: $radius-lg;
+        font-size: 0.9rem;
+        font-weight: $font-weight-medium;
+        box-shadow: $shadow-sm;
+      }
+    }
+  }
+}
