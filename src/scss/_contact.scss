@@ -3,6 +3,14 @@
 .contact {
   padding: variables.$spacing-3xl 0;
   background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: variables.$breakpoint-md) {
+    flex-direction: column;
+  }
 
   &__container {
     max-width: variables.$container-max-width;
@@ -49,6 +57,44 @@
         color: variables.$primary-dark;
         text-decoration: underline;
       }
+    }
+  }
+
+  &__form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 variables.$container-padding;
+
+    @media (max-width: variables.$breakpoint-md) {
+      max-width: 100%;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: variables.$font-weight-bold;
+      margin-bottom: variables.$spacing-xl;
+      color: variables.$text-color;
+    }
+
+    .form-group {
+      margin-bottom: variables.$spacing-xl;
+    }
+
+    .form-group label {
+      font-size: 1.125rem;
+      font-weight: variables.$font-weight-medium;
+      margin-bottom: variables.$spacing-md;
+      color: variables.$text-color;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: variables.$spacing-md;
+      border: 1px solid variables.$border-color;
+      font-size: 1.125rem;
+      font-weight: variables.$font-weight-medium;
+      color: variables.$text-color;
     }
   }
 }

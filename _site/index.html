@@ -113,113 +113,6 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <div class="projects__container">
-      <h2 class="section__title">Featured Projects</h2>
-      <div class="projects__grid">
-        <article class="project__card">
-          <div class="project__image">
-            <div class="project__placeholder">
-              <svg width="100%" height="200" viewBox="0 0 400 200" fill="none">
-                <rect width="400" height="200" fill="#f1f5f9"/>
-                <rect x="50" y="50" width="300" height="100" fill="#e2e8f0" rx="8"/>
-                <circle cx="100" cy="100" r="20" fill="#94a3b8"/>
-                <rect x="130" y="80" width="120" height="8" fill="#94a3b8" rx="4"/>
-                <rect x="130" y="95" width="80" height="8" fill="#cbd5e1" rx="4"/>
-              </svg>
-            </div>
-          </div>
-          <div class="project__content">
-            <h3 class="project__title">Solicitation Builder</h3>
-            <p class="project__description">
-              A Ruby on Rails application enabling government agencies to streamline 
-              procurement document creation. Built comprehensive automated test suite 
-              with Capybara and MagicTest for large monolithic application.
-            </p>
-            <div class="project__tech">
-              <span class="tech__tag">Ruby on Rails</span>
-              <span class="tech__tag">Capybara</span>
-              <span class="tech__tag">MagicTest</span>
-              <span class="tech__tag">PostgreSQL</span>
-            </div>
-            <div class="project__links">
-              <a href="#" class="project__link">Case Study</a>
-              <a href="#" class="project__link">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project__card">
-          <div class="project__image">
-            <div class="project__placeholder">
-              <svg width="100%" height="200" viewBox="0 0 400 200" fill="none">
-                <rect width="400" height="200" fill="#f1f5f9"/>
-                <rect x="50" y="50" width="300" height="100" fill="#e2e8f0" rx="8"/>
-                <rect x="70" y="70" width="40" height="40" fill="#3b82f6" rx="4"/>
-                <rect x="120" y="70" width="40" height="40" fill="#10b981" rx="4"/>
-                <rect x="170" y="70" width="40" height="40" fill="#f59e0b" rx="4"/>
-                <rect x="220" y="70" width="40" height="40" fill="#ef4444" rx="4"/>
-                <rect x="270" y="70" width="40" height="40" fill="#8b5cf6" rx="4"/>
-              </svg>
-            </div>
-          </div>
-          <div class="project__content">
-            <h3 class="project__title">Government Agency Solutions</h3>
-            <p class="project__description">
-              Multiple Ruby on Rails applications supporting government agencies in 
-              delivering equitable law enforcement and justice solutions. Integrated 
-              RESTful APIs and optimized AWS cloud environments.
-            </p>
-            <div class="project__tech">
-              <span class="tech__tag">Ruby on Rails</span>
-              <span class="tech__tag">AWS</span>
-              <span class="tech__tag">Elasticsearch</span>
-              <span class="tech__tag">REST APIs</span>
-            </div>
-            <div class="project__links">
-              <a href="#" class="project__link">Case Study</a>
-              <a href="#" class="project__link">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project__card">
-          <div class="project__image">
-            <div class="project__placeholder">
-              <svg width="100%" height="200" viewBox="0 0 400 200" fill="none">
-                <rect width="400" height="200" fill="#f1f5f9"/>
-                <rect x="50" y="50" width="300" height="100" fill="#e2e8f0" rx="8"/>
-                <rect x="70" y="70" width="60" height="60" fill="#1f2937" rx="4"/>
-                <rect x="140" y="70" width="60" height="60" fill="#374151" rx="4"/>
-                <rect x="210" y="70" width="60" height="60" fill="#4b5563" rx="4"/>
-                <rect x="280" y="70" width="60" height="60" fill="#6b7280" rx="4"/>
-              </svg>
-            </div>
-          </div>
-          <div class="project__content">
-            <h3 class="project__title">Ventura Coast Web Design</h3>
-            <p class="project__description">
-              Founded and operate a web design business delivering modern, responsive 
-              websites and enhanced Google Business presence for local clients. 
-              Built reusable Eleventy templates for consistent branding.
-            </p>
-            <div class="project__tech">
-              <span class="tech__tag">Eleventy</span>
-              <span class="tech__tag">JavaScript</span>
-              <span class="tech__tag">CSS</span>
-              <span class="tech__tag">SEO</span>
-            </div>
-            <div class="project__links">
-              <a href="#" class="project__link">Live Demo</a>
-              <a href="#" class="project__link">GitHub</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="contact__container">
@@ -247,6 +140,37 @@
         </div>
       </div>
     </div>
+    <div class="contact__form">
+                <h2>Send me a message</h2>
+                <form class="contact-form" action="#" method="POST" data-netlify="true">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell us about your project, goals, and any specific requirements..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
   </section>
 </main>
 
