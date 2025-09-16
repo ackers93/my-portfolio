@@ -61,40 +61,179 @@
   }
 
   &__form {
-    max-width: 600px;
+    max-width: 70%;
+    min-width: 500px;
     margin: 0 auto;
-    padding: 0 variables.$container-padding;
+    padding: variables.$spacing-3xl;
+    margin-top: variables.$spacing-2xl;
+    background: variables.$background-light;
+    border-radius: variables.$radius-lg;
+    box-shadow: variables.$shadow-md;
 
     @media (max-width: variables.$breakpoint-md) {
       max-width: 100%;
+      padding: variables.$spacing-xl;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       font-weight: variables.$font-weight-bold;
-      margin-bottom: variables.$spacing-xl;
+      margin-bottom: variables.$spacing-2xl;
       color: variables.$text-color;
+      text-align: center;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: variables.$spacing-lg;
     }
 
     .form-group {
-      margin-bottom: variables.$spacing-xl;
-    }
-
-    .form-group label {
-      font-size: 1.125rem;
-      font-weight: variables.$font-weight-medium;
-      margin-bottom: variables.$spacing-md;
-      color: variables.$text-color;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      
+      label {
+        font-size: 1rem;
+        font-weight: variables.$font-weight-medium;
+        margin-bottom: variables.$spacing-sm;
+        color: variables.$text-color;
+        display: block;
+        
+        &[for] {
+          cursor: pointer;
+        }
+      }
+      
+      &.error {
+        input,
+        textarea {
+          border-color: variables.$error-color;
+          box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+        }
+      }
+      
+      &.success {
+        input,
+        textarea {
+          border-color: variables.$success-color;
+          box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        }
+      }
     }
 
     .form-group input,
     .form-group textarea {
       width: 100%;
-      padding: variables.$spacing-md;
-      border: 1px solid variables.$border-color;
-      font-size: 1.125rem;
-      font-weight: variables.$font-weight-medium;
+      padding: variables.$spacing-md variables.$spacing-lg;
+      border: 2px solid variables.$border-color;
+      border-radius: variables.$radius-md;
+      font-size: 1rem;
+      font-weight: variables.$font-weight-normal;
       color: variables.$text-color;
+      background: white;
+      transition: all 0.2s ease;
+      font-family: inherit;
+
+      &:focus {
+        outline: none;
+        border-color: variables.$primary-color;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+      }
+
+      &:hover {
+        border-color: variables.$primary-light;
+      }
+
+      &:invalid {
+        border-color: variables.$error-color;
+      }
+
+      &:valid {
+        border-color: variables.$success-color;
+      }
+
+      &::placeholder {
+        color: variables.$text-lighter;
+        font-style: italic;
+      }
+
+      &:required {
+        position: relative;
+      }
+
+      &:required::after {
+        content: " *";
+        color: variables.$error-color;
+        font-weight: variables.$font-weight-bold;
+      }
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
+      line-height: 1.5;
+    }
+
+    .submit-btn {
+      background: variables.$primary-color;
+      color: white;
+      border: none;
+      padding: variables.$spacing-md variables.$spacing-2xl;
+      font-size: 1.125rem;
+      font-weight: variables.$font-weight-semibold;
+      border-radius: variables.$radius-md;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-top: variables.$spacing-lg;
+      align-self: center;
+      min-width: 160px;
+      font-family: inherit;
+
+      &:hover {
+        background: variables.$primary-dark;
+        transform: translateY(-1px);
+        box-shadow: variables.$shadow-lg;
+      }
+
+      &:active {
+        transform: translateY(0);
+        box-shadow: variables.$shadow-md;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+      }
+
+      &:disabled {
+        background: variables.$text-lighter;
+        cursor: not-allowed;
+        transform: none;
+        box-shadow: none;
+
+        &:hover {
+          background: variables.$text-lighter;
+          transform: none;
+          box-shadow: none;
+        }
+      }
+    }
+
+    // Form validation messages
+    .form-error {
+      color: variables.$error-color;
+      font-size: 0.875rem;
+      margin-top: variables.$spacing-xs;
+      display: block;
+    }
+
+    .form-success {
+      color: variables.$success-color;
+      font-size: 0.875rem;
+      margin-top: variables.$spacing-xs;
+      display: block;
     }
   }
 }
